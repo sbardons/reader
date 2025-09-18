@@ -21,7 +21,11 @@ jobs:
     - name: Build package
       run: python -m build
 
+<<<<<<< HEAD
     - name: Test publish package
+=======
+        - name: Test publish package
+>>>>>>> 79f74a7c977e919a18486e2a4a613f2656533785
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         user: __token__
