@@ -6,7 +6,10 @@ on:
 
 jobs:
   publish:
-    runs-on: ubuntu-latest 
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # REQUIRED for trusted publishing
+      contents: read   # REQUIRED for actions/checkout and gh release
     steps:
     - uses: actions/checkout@v4
     - name: Set up Python
